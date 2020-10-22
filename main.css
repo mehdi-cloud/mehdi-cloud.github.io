@@ -10,7 +10,8 @@
 }
 
 html{
-    background: url(./images/ResumeWebsite.jpg);
+    background: url(/Images/ResumeWebsite.jpg);
+    background-attachment: fixed;
     font-family: 'Helvetica Neue', sans-serif;
     -webkit-background-size: cover;
     -moz-background-size: cover;
