@@ -1,0 +1,178 @@
+.profile-box{
+    width: 600px;
+    height: 600px;
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    color:white;
+    margin: 0 auto;
+    margin-top:80px;
+    text-align: center;
+}
+
+html{
+    background: url(./images/ResumeWebsite.jpg);
+    font-family: 'Helvetica Neue', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.profile-pic {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+h1{
+    font-weight: lighter;
+    font-weight: 100 ;
+    letter-spacing: .10rem;
+    font-size: 45px;
+}
+h5{
+    font-size:75%px;
+    
+}
+
+p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.fab{
+    font-size: 55px;
+    padding-right: 1rem;
+    color:white;
+    
+}
+
+.fab:hover{
+    color:lightskyblue;
+    font-size: 62px;
+}
+.fas{
+    font-size: 53px;
+    padding-right: 1rem;
+    color:white;
+    
+}
+
+.fas:hover{
+    color:lightskyblue;
+    font-size: 62px;
+}
+
+.line-break{
+    width: 600px;
+    border-top:1px solid white;
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+   
+    background: rgba(0,0,0,.4);
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.logo{
+    color:white;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.nav-links{
+    color:white;
+    display:flex;
+    letter-spacing: 3px;
+    justify-content: space-around;
+    width:30%;
+
+}
+
+.nav-links li{
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px
+
+}
+.burger{
+    display:none;
+    cursor:pointer;
+}
+
+.burger div{
+    width:25px;
+    height:3px;
+    background-color:white;
+    margin:5px;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width:50%;
+    
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x:hidden;
+    }
+ .nav-links{
+     position:absolute;
+     right:0px;
+     height:92vh; 
+     top:8vh;
+     background-color: rgba(0,0,0,.4);
+     
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     width:50%;
+     transform: translateX(100%);
+     transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+     opacity:0;
+ }
+ .burger{
+     display: block;
+ }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+ 
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+/*
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform:rotate(45deg) translate(-5px,-6px);
+}
