@@ -11,7 +11,10 @@
 
 html{
     background: url(/Images/ResumeWebsite.jpg);
+<<<<<<< HEAD
     background-attachment: fixed;
+=======
+>>>>>>> 559c2234b11e2349b5935ec795780cca92ae3820
     font-family: 'Helvetica Neue', sans-serif;
     -webkit-background-size: cover;
     -moz-background-size: cover;
